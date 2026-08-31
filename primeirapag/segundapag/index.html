@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <section class="hero" id="inicio">
+      <div class="hero-copy reveal">
+        <span class="eyebrow">VICTOR DO CORTE BARBEARIA</span>
+      </div>
+    </section>
+    <section class="section pricing" id="tabela">
+      <div class="container pricing-grid">
+        <div class="price-list reveal">
+          <span class="label">TABELA DE PREÇOS</span>
+          <h2>Serviços e valores</h2>
+          <div class="price">
+            <span>Corte</span><b>R$ 18</b
+            ><button
+              class="mini service"
+              data-service="Corte"
+              data-price="R$ 18"
+            >
+              Agendar
+            </button>
+          </div>
+          <div class="price">
+            <span>Corte + Barba</span><b>R$ 25</b
+            ><button
+              class="mini service"
+              data-service="Corte e Barba"
+              data-price="R$ 25"
+            >
+              Agendar
+            </button>
+          </div>
+          <div class="price">
+            <span>Corte + Sobrancelha</span><b>R$ 22</b
+            ><button
+              class="mini service"
+              data-service="Corte e Sobrancelha"
+              data-price="R$ 22"
+            >
+              Agendar
+            </button>
+          </div>
+          <div class="price">
+            <span>Corte + Barba + Sombrancelha</span><b>R$ 28</b
+            ><button
+              class="mini service"
+              data-service=" Corte + Barba + Sombrancelha"
+              data-price="R$ 28"
+            >
+              Agendar
+            </button>
+          </div>
+        </div>
+        <div class="location reveal" id="localizacao">
+          <div class="map">
+            <small>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.8906906459542!2d-37.81126782591169!3d-10.74290728940381!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x70fd829fe2295bb%3A0x4e19755a1a1fecc5!2zUHJhw6dhIEx1Y8OtbGEgTWFjw6lkbyBEw6lkYSwgNjQxLCBTaW3Do28gRGlhcyAtIFNFLCA0OTQ4MC0wMDA!5e0!3m2!1spt-BR!2sbr!4v1788114184415!5m2!1spt-BR!2sbr"
+                width="300"
+                height="450"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="strict-origin-when-cross-origin"
+              ></iframe>
+            </small>
+          </div>
+          <div>
+            <h3>Onde estamos</h3>
+            <p>Praça Lucido Macedo Deda/ Numero 641, SE<br />Simão Dias - SE</p>
+            <p><b>Telefone:</b> (79) 9 9848-3685</p>
+            <a
+              href="#"
+              data-whatsapp="Olá! Gostaria de saber a localização da Barbearia."
+              >Falar pelo WhatsApp →</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <style>
+      button {
+        background-color: black;
+        color: #ddd;
+        cursor: pointer;
+        border: none;
+        border-radius: 8px;
+        padding: 8px 14px;
+        font-size: 14px;
+      }
+      .pricing {
+        background: #f5f5f3;
+      }
+      .pricing-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+      }
+      .price-list,
+      .location {
+        background: #fff;
+        border: 1px solid var(--line);
+        border-radius: 18px;
+        padding: 34px;
+      }
+      .price-list h2 {
+        font-size: 45px;
+        margin: 12px 0 30px;
+      }
+      .price {
+        display: grid;
+        grid-template-columns: 1fr auto auto;
+        gap: 15px;
+        align-items: center;
+        padding: 18px 0;
+        border-bottom: 1px dashed #ddd;
+      }
+
+      .location {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 12px;
+      }
+      .map {
+        min-height: 380px;
+        border-radius: 13px;
+        font: 40px Oswald;
+        align-content: center;
+      }
+      .location > div:last-child {
+        padding: 30px;
+      }
+      .location h3 {
+        font: 30px Oswald;
+      }
+      .location p {
+        color: #666;
+      }
+      .location a {
+        color: #9b7607;
+        font-weight: 800;
+      }
+      .eyebrow,
+      .label {
+        font-size: 12px;
+        font-weight: 800;
+        letter-spacing: 2px;
+        color: #8b6a08;
+      }
+
+      /* ===== RESPONSIVO MOBILE ===== */
+      @media (max-width: 768px) {
+        .pricing-grid {
+          grid-template-columns: 1fr;
+          gap: 20px;
+        }
+        .price-list,
+        .location {
+          padding: 22px;
+          border-radius: 14px;
+        }
+        .price-list h2 {
+          font-size: 30px;
+          margin: 10px 0 20px;
+        }
+        .map iframe {
+          width: 100%;
+          height: 260px;
+        }
+        .location {
+          grid-template-columns: 1fr;
+        }
+        .map {
+          min-height: 280px;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .price {
+          grid-template-columns: 1fr;
+          gap: 8px;
+          text-align: left;
+        }
+        .price b {
+          font-size: 18px;
+        }
+        button {
+          width: 100%;
+          padding: 10px 0;
+          font-size: 15px;
+        }
+        .price-list h2 {
+          font-size: 24px;
+        }
+        .price-list,
+        .location {
+          padding: 23px;
+        }
+      }
+    </style>
+
+    <script src="agendamento.js"></script>
+  </body>
+</html>
