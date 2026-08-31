@@ -1,0 +1,338 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta
+      name="description"
+      content="Victor do Corte Barbearia cortes, barba e atendimento personalizado."
+    />
+    <title>Victor do Corte | Barbearia</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container nav">
+        <a class="logo" href="#inicio"
+          ><b>VICTOR DO CORTE</b><small>BARBEARIA</small></a
+        >
+        <button
+          class="menu-toggle"
+          id="menuToggle"
+          aria-label="Abrir menu"
+          aria-expanded="false"
+        >
+          ☰
+        </button>
+        <nav class="menu" id="menu">
+          <a href="#inicio">Início</a><a href="#sobre">Sobre Nós</a
+          ><a href="#servicos">Serviços</a><a href="#galeria">Galeria</a
+          ><a href="#tabela">Tabela</a><a href="#localizacao">Localização</a
+          ><a href="#contato">Contato</a>
+        </nav>
+        <a
+          class="btn gold desktop-wa"
+          href="paginasecundaria/index.html "
+          target="_blank"
+          rel="next"
+        >
+          Agendar agora</a
+        >
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="inicio">
+        <div class="hero-copy reveal">
+          <span class="eyebrow">VICTOR DO CORTE BARBEARIA</span>
+          <h1>VALORIZE SEU ESTILO.<br />O MELHOR CORTE<br />DA CIDADE.</h1>
+          <p>
+            Seu estilo merece atenção. Cortes precisos, barba profissional e uma
+            experiência feita para você.
+          </p>
+          <div class="actions">
+            <a class="btn dark" href="#servicos">Conheça nossos serviços</a
+            ><a
+              class="btn gold"
+              href="#"
+              data-whatsapp="Olá! Quero agendar um horário na Victor do Corte Barbearia."
+              >Agendar agora</a
+            >
+          </div>
+          <div class="features">
+            <div>
+              ✂<b>Corte<br />Impecável</b>
+            </div>
+            <div>
+              ⌁<b>Barba<br />Profissional</b>
+            </div>
+            <div>
+              ▣<b>Ambiente<br />Confortável</b>
+            </div>
+            <div>
+              ♙<b>Serviço<br />Personalizado</b>
+            </div>
+          </div>
+        </div>
+        <div class="hero-image">
+          <div class="image-placeholder" data-photo="hero.jpg">
+            <img src="assets/hero.jpg" alt="foto principal" />
+          </div>
+        </div>
+      </section>
+
+      <section class="section intro" id="sobre">
+        <div class="container intro-grid reveal">
+          <div>
+            <span class="label">NOSSA BARBEARIA</span>
+            <h2>Estilo, técnica e personalização em cada atendimento.</h2>
+          </div>
+          <div>
+            <p>
+              Na nossa barbearia, cada detalhe importa. Nosso objetivo é deixar
+              você elegante e no visual que você mais gosta.
+            </p>
+            <p>
+              Escolha seu serviço, clique em <b>Agendar</b> e fale diretamente
+              conosco pelo WhatsApp.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="servicos">
+        <div class="container">
+          <div class="heading reveal">
+            <span class="label">NOSSOS SERVIÇOS</span>
+            <h2>Escolha seu estilo.</h2>
+            <p>Agende diretamente pelo WhatsApp.</p>
+          </div>
+          <div class="cards">
+            <article class="card reveal">
+              <i>01</i><span>✂</span>
+              <h3>Corte</h3>
+              <p>Para ficar no estilo que você mais gosta.</p>
+              <div>
+                <b>R$ 18</b
+                ><button
+                  class="btn gold service"
+                  data-service="Corte"
+                  data-price="R$ 18"
+                >
+                  Agendar
+                </button>
+              </div>
+            </article>
+            <article class="card reveal">
+              <i>02</i><span>✂</span>
+              <h3>Corte + Sombrancelha</h3>
+              <p>Seu visual no estado perfeito</p>
+              <div>
+                <b>R$ 22</b
+                ><button
+                  class="btn gold service"
+                  data-service="Corte + Sombrancelha"
+                  data-price="R$ 22"
+                >
+                  Agendar
+                </button>
+              </div>
+            </article>
+            <article class="card reveal">
+              <i>03</i><span>⌁</span>
+              <h3>Corte + Barba</h3>
+              <p>Perfeito para valorizar seu visual.</p>
+              <div>
+                <b>R$ 25</b
+                ><button
+                  class="btn gold service"
+                  data-service="Barba Design"
+                  data-price="R$ 25"
+                >
+                  Agendar
+                </button>
+              </div>
+            </article>
+            <article class="card reveal">
+              <i>04</i><span>★</span>
+              <h3>Corte + Barba + Sombrancelha</h3>
+              <p>O combo perfeito para sair com o visual renovado.</p>
+              <div>
+                <b>R$ 28</b
+                ><button
+                  class="btn gold service"
+                  data-service="Corte + Barba + Sombrancelha"
+                  data-price="R$ 28"
+                >
+                  Agendar
+                </button>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section gallery" id="galeria">
+        <div class="container">
+          <div class="heading reveal">
+            <span class="label">GALERIA</span>
+            <h2>Nossos cortes.</h2>
+          </div>
+          <div class="gallery-grid">
+            <button
+              class="gallery-item reveal"
+              data-name=""
+              data-photo="corte-1.jpg"
+            >
+              <div class="photo" data-photo="corte-1.jpg">
+                <img src="assets/corte-1.jpg" alt="corte" />
+              </div>
+            </button>
+            <button
+              class="gallery-item reveal"
+              data-name=""
+              data-photo="corte-2.jpg"
+            >
+              <div class="photo" data-photo="corte-2.jpg">
+                <img src="assets/corte-2.jpg" alt="corte" />
+              </div>
+            </button>
+            <button
+              class="gallery-item reveal"
+              data-name=""
+              data-photo="corte-3.jpg"
+            >
+              <div class="photo" data-photo="corte-3.jpg">
+                <img src="assets/corte-3.jpg" alt="corte" />
+              </div>
+            </button>
+            <button
+              class="gallery-item reveal"
+              data-name=""
+              data-photo="corte-4.jpg"
+            >
+              <div class="photo" data-photo="corte-4.jpg">
+                <img src="assets/corte-4.jpg" alt="corte" />
+              </div>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="section pricing" id="tabela">
+        <div class="container pricing-grid">
+          <div class="price-list reveal">
+            <span class="label">TABELA DE PREÇOS</span>
+            <h2>Serviços e valores</h2>
+            <div class="price">
+              <span>Corte</span><b>R$ 18</b
+              ><button
+                class="mini service"
+                data-service="Corte"
+                data-price="R$ 18"
+              >
+                Agendar
+              </button>
+            </div>
+            <div class="price">
+              <span>Corte + Barba</span><b>R$ 25</b
+              ><button
+                class="mini service"
+                data-service="Corte e Barba"
+                data-price="R$ 25"
+              >
+                Agendar
+              </button>
+            </div>
+            <div class="price">
+              <span>Corte + Sobrancelha</span><b>R$ 22</b
+              ><button
+                class="mini service"
+                data-service="Corte e Sobrancelha"
+                data-price="R$ 22"
+              >
+                Agendar
+              </button>
+            </div>
+            <div class="price">
+              <span>Corte + Barba + Sombrancelha</span><b>R$ 28</b
+              ><button
+                class="mini service"
+                data-service=" Corte + Barba + Sombrancelha"
+                data-price="R$ 28"
+              >
+                Agendar
+              </button>
+            </div>
+          </div>
+          <div class="location reveal" id="localizacao">
+            <div class="map">
+              <small>
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.8906906459542!2d-37.81126782591169!3d-10.74290728940381!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x70fd829fe2295bb%3A0x4e19755a1a1fecc5!2zUHJhw6dhIEx1Y8OtbGEgTWFjw6lkbyBEw6lkYSwgNjQxLCBTaW3Do28gRGlhcyAtIFNFLCA0OTQ4MC0wMDA!5e0!3m2!1spt-BR!2sbr!4v1788114184415!5m2!1spt-BR!2sbr"
+                  width="300"
+                  height="450"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="strict-origin-when-cross-origin"
+                ></iframe>
+              </small>
+            </div>
+            <div>
+              <h3>Onde estamos</h3>
+              <p>
+                Praça Lucido Macedo Deda/ Numero 641, SE<br />Simão Dias - SE
+              </p>
+              <p><b>Telefone:</b> (79) 9 9848-3685</p>
+              <a
+                href="#"
+                data-whatsapp="Olá! Gostaria de saber a localização da Barbearia."
+                >Falar pelo WhatsApp →</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="cta" id="contato">
+        <div class="container cta-inner reveal">
+          <div>
+            <span class="label">PRONTO PARA MUDAR O VISUAL?</span>
+            <h2>Sua autoestima aumenta aqui.</h2>
+            <p>Escolha o seu corte e mande uma mensagem.</p>
+          </div>
+          <a
+            class="btn gold large"
+            href="paginasecundaria/index.html"
+            target="_blank"
+            rel="next"
+            >Agendar agora</a
+          >
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="container footer">
+        <div class="logo"><b>VICTOR DO CORTE</b><small></small></div>
+        <p>© <span id="year"></span> Victor do Corte Barbearia.</p>
+        <a href="#inicio">Voltar ao topo ↑</a>
+      </div>
+    </footer>
+    <div class="modal" id="modal">
+      <div class="backdrop"></div>
+      <div class="modal-box">
+        <button id="close">×</button>
+        <div id="modalPhoto"></div>
+        <h3 id="modalTitle"></h3>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
