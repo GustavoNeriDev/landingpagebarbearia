@@ -43,9 +43,3 @@ botoesWhatsApp.forEach(function (botao) {
     abrirWhatsApp(mensagem);
   });
 });
-
-function openWhatsApp(message) {
-  const encodedMessage = encodeURIComponent(message);
-  const url = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodedMessage}`;
-  window.open(url, "_blank");
-}
