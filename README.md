@@ -38,7 +38,10 @@ O objetivo do projeto foi criar uma página de vendas simples e direta para uma 
 ```
 landingpagebarbearia/
 ├── assets/               # Imagens (hero, cortes da galeria, etc.)
-├── paginasecundaria/     # Página secundária de agendamento
+├── paginasecundaria/ 
+       |--- agendamento.js
+       |--- Index.html   # Página secundária de 
+agendamento
 ├── index.html            # Página principal da landing page
 ├── style.css             # Estilos globais e responsividade
 ├── script.js             # Lógica de interação (menu, WhatsApp, etc.)
