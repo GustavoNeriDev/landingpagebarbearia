@@ -40,8 +40,7 @@ landingpagebarbearia/
 ├── assets/               # Imagens (hero, cortes da galeria, etc.)
 ├── paginasecundaria/ 
        |--- agendamento.js
-       |--- Index.html   # Página secundária de 
-agendamento
+       |--- Index.html      # Página secundária de agendamento
 ├── index.html            # Página principal da landing page
 ├── style.css             # Estilos globais e responsividade
 ├── script.js             # Lógica de interação (menu, WhatsApp, etc.)
