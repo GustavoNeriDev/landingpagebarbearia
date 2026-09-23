@@ -2,7 +2,7 @@ Victor do Corte — Barbearia
 
 Landing page responsiva desenvolvida para a **Victor do Corte Barbearia**, com foco em apresentar os serviços, valores e facilitar o agendamento diretamente pelo WhatsApp, sem necessidade de formulários ou cadastros.
 
-🔗 **Site no ar:** [barbeariavictordocorte.vercel.app](https://barbeariavictordocorte.vercel.app/)
+🔗 **Site no ar:** [barbeariavictordocorte.vercel.app](https://barbeariavictordocorte.netlify.app/)
 
 ---
 
